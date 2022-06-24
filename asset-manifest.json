@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Kyopuro-Cheat-sheet/static/css/main.5474d112.css",
+    "main.js": "/Kyopuro-Cheat-sheet/static/js/main.66db14db.js",
+    "index.html": "/Kyopuro-Cheat-sheet/index.html",
+    "main.5474d112.css.map": "/Kyopuro-Cheat-sheet/static/css/main.5474d112.css.map",
+    "main.66db14db.js.map": "/Kyopuro-Cheat-sheet/static/js/main.66db14db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5474d112.css",
+    "static/js/main.66db14db.js"
+  ]
+}
