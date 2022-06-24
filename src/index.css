@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    font-family: 'Exo', sans-serif;
+    overflow: scroll;
+    width: 100%;
+    height:600vh;
+    
+}
+
+
+.context {
+    z-index:2;  
+    width: 100%;
+    height:600vh;
+    position: absolute;
+    top:50vh;
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    -webkit-text-stroke: 2.5px rgb(73, 69, 69);
+    /*text-stroke: 2.5px rgb(73, 69, 69);*/
+}
+
+.context ul{
+    position: absolute;
+    top: 30vh;
+    left: 19vh;
+    right: 19vh;
+    font-size: 20px;
+}
+
+#root{
+    position: absolute;
+    width: 100%;
+    height:600vh;
+    top: 30vh;
+}
+
+
+
+/*背景*/
+
+.area{
+    background: #98dc79;  
+    /*-webkitはベンダープレフィックスと呼ばれる*/
+    background: -webkit-linear-gradient(to left, #d5eed0, #67d722);  
+    width: 100%;
+    /*vhはブラウザの表示域を基準にする単位, 100vhはブラウザ全体の高さ*/
+    height:100vh;
+    top: 0;
+    left: 0;
+    position:fixed;
+    will-change: transform, opacity, border-radius;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    overflow:hidden;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    will-change: transform, opacity, border-radius;
+}
+
+.circles li:nth-child(odd){
+    background: rgba(108, 6, 6, 0.7);
+}
+
+.circles li:nth-child(even){
+    background: rgba(106, 3, 101, 0.7);
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 130px;
+    height: 130px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.5;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1200px) rotate(720deg);
+        opacity: 0;
+        border-radius: 80%;
+    }
+
+}
