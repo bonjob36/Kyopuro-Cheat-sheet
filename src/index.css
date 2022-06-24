@@ -55,7 +55,7 @@ body{
 .area{
     background: #98dc79;  
     /*-webkitはベンダープレフィックスと呼ばれる*/
-    background: -webkit-linear-gradient(to left, #d5eed0, #67d722);  
+    background: -webkit-linear-gradient(to left, #d5eed0, #a4eb78);  
     width: 100%;
     /*vhはブラウザの表示域を基準にする単位, 100vhはブラウザ全体の高さ*/
     height:100vh;
